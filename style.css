@@ -150,3 +150,8 @@ form .input-field {
 .footer .social-field.facebook {
     background: linear-gradient(to right, #1e3c72, #2a5298);
 }
+
+button {
+    width: 10rem;
+    padding: 0.5rem;
+}
