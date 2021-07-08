@@ -11,3 +11,8 @@ function logar() {
         alert("Usuario ou senha inválido!");
     }
 }
+
+function sair() {
+    localStorage.removeItem("logado");
+    window.location.href = "index.html"
+}
