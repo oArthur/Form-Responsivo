@@ -3,7 +3,7 @@ function logar() {
     var senha = document.getElementById("password");
 
     if (usuario.value == "admin" && senha.value == "admin") {
-        localStorage.setItem("acesso", true);
+        localStorage.setItem("logado", true);
         alert("Usuario autenticado.")
         window.location.href = "pag.html"
         return false;

@@ -1,17 +1,9 @@
-var form = document.getElementById('formulario');
-var username = document.getElementById('username');
-
-
-
-
-
-
-
-
-// form.addEventListener('submit', function(e) {
-//     // alerta o valor do campo
-//     alert(username.value);
-
-//     // impede o envio do form
-//     e.preventDefault();
-// });
+var logado = false;
+if (localStorage.getItem("logado") == "true") {
+    logado = true;
+    console.log("logado")
+}
+if (logado != true) {
+    alert("Voce nao esta autenticado.")
+    window.location.href = "index.html"
+}
