@@ -4,8 +4,8 @@ function logar() {
 
     if (usuario.value == "admin" && senha.value == "admin") {
         localStorage.setItem("logado", true);
-        alert("Usuario autenticado.")
-        window.location.href = "pag.html"
+        alert("Usuario autenticado.");
+        window.location.href = "pag.html";
         return false;
     } else {
         alert("Usuario ou senha inválido!");
@@ -13,6 +13,6 @@ function logar() {
 }
 
 function sair() {
+    window.location.href = "index.html";
     localStorage.removeItem("logado");
-    window.location.href = "index.html"
 }
