@@ -6,30 +6,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
-    <script src="./js/main.js"></script>
-    <title>Register</title>
+    <script src="./js/login.js" type="text/javascript"></script>
+
+    <title>Login</title>
 </head>
 
 <body>
     <main class="container">
-        <h2>Dados Cadastrais</h2>
+        <h2 class="log">Dados Pessoais</h2>
         <form id="formulario" action="">
             <div class="input-field">
-                <input type="text" name="username" id="username" placeholder="Insira Seu Username">
-                <div class="underline"></div>
-            </div>
-            <div class="input-field">
-                <input type="email" name="email" id="email" placeholder="Insira Seu Email">
+                <input type="text" name="username" id="username" placeholder="Insira seu Username ou Email">
                 <div class="underline"></div>
             </div>
             <div class="input-field">
                 <input type="password" name="password" id="password" placeholder="Insira Sua Senha">
                 <div class="underline"></div>
             </div>
-            <input type="submit" id="btn-submit" value="Continue">
+            <input type="submit" onclick="return logar()" id="btn-submit" value="Continue">
         </form>
         <div class="footer">
-            <span>Já é cadastrado? <a href="index.html">Fazer Login</a> </span>
+            <span>Ainda não é cadastrado? <a href="register.html">Cadastre-se</a></span>
             <span>Entre com suas redes socias.</span>
             <div class="social-fields">
                 <div class="social-field twitter">
@@ -45,7 +42,7 @@
             </div>
         </div>
     </main>
-    <script src="script.js"></script>
+
 </body>
 
 </html>
